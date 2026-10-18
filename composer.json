@@ -1,0 +1,46 @@
+{
+  "name": "waply/waply-php",
+  "description": "Official PHP & Laravel SDK for Waply WhatsApp Gateway & Messaging API Indonesia",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://waply.web.id",
+  "authors": [
+    {
+      "name": "Waply Indonesia",
+      "email": "support@waply.web.id",
+      "homepage": "https://waply.web.id"
+    }
+  ],
+  "keywords": [
+    "whatsapp",
+    "whatsapp-gateway",
+    "whatsapp-api",
+    "whatsapp-indonesia",
+    "laravel",
+    "php",
+    "messaging-api",
+    "broadcast-whatsapp",
+    "waply"
+  ],
+  "require": {
+    "php": ">=7.4|^8.0|^8.1|^8.2|^8.3",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Waply\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Waply\\WaplyServiceProvider"
+      ],
+      "aliases": {
+        "Waply": "Waply\\Facades\\Waply"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
